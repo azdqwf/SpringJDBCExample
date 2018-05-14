@@ -3,7 +3,9 @@ package com.danila.customer.dao.impl;
 import com.danila.customer.dao.CustomerDAO;
 import com.danila.customer.model.Customer;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.transaction.annotation.Transactional;
 
+@Transactional
 public class JdbcCustomerDAO implements CustomerDAO {
     private final JdbcTemplate jdbcTemplate;
 
